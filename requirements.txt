@@ -1,0 +1,5 @@
+# TEST3 HDrive Host 依赖
+PyQt6>=6.4.0
+pyserial>=3.5
+pyqtgraph>=0.13.0
+numpy>=1.21.0
