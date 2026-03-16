@@ -1,6 +1,36 @@
-#HDrive Host
+# Hdrive Host
 
-HDrive开源电机驱动器的简易上位机，支持实时控制、状态监控和历史数据图表。
+Hdrive 开源关节电机驱动器的简易上位机，支持实时控制、状态监控和历史数据图表。
+
+## 关于 Hdrive
+
+**Hdrive** 是一款面向人形机器人和高性能伺服应用的开源关节电机驱动器。
+
+- **项目主页**: [https://humanoid-robot.fun/d/35-ren-xing-ji-qi-ren-kai-yuan-guan-jie-qu-dong-qi-shang-shou-bi-kan](https://humanoid-robot.fun/d/35-ren-xing-ji-qi-ren-kai-yuan-guan-jie-qu-dong-qi-shang-shou-bi-kan)
+- **固件源码**: 最新含485通讯代码：
+通过网盘分享的文件：HDRIVER-3-16.rar
+链接: https://pan.baidu.com/s/1VkBVzxgl0sSHExJTTR7AtA?pwd=a7ps 提取码: a7ps
+- **通信协议**: RS485 @ 921600 bps
+
+### 硬件规格
+
+| 参数 | 规格 |
+|------|------|
+| 主控芯片 | STM32G474RET6 |
+| 驱动芯片 | DRV8301 |
+| 编码器 | MT6701 (14位磁编码器) |
+| 通信接口 | RS485 + UART |
+| 支持电机 | GIM6010-8 (14对极) |
+| 供电电压 | 24V |
+| 峰值电流 | 10A |
+
+### 功能特性
+
+- **FOC 矢量控制**: 支持电流/速度/位置三环控制
+- **MIT 控制模式**: 位置+速度+Kp+Kd+力矩前馈
+- **实时反馈**: 位置、速度、电流、温度
+- **RS485 总线**: 支持多设备级联
+- **开源协议**: 简化串口协议，易于二次开发
 
 ## 功能特性
 
